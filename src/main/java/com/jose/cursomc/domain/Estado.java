@@ -32,7 +32,6 @@ public class Estado implements Serializable {
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.cidades = cidades;
 	}
 
 	public Integer getId() {
