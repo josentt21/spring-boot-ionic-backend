@@ -16,8 +16,8 @@ import com.jose.cursomc.services.ClienteServece;
 
 
 @RestController
-@RequestMapping(value="/categorias")
-public class CategoriaResource {
+@RequestMapping(value="/clientes")
+public class ClienteResource {
 
 	@Autowired
 	private ClienteServece service;
@@ -25,7 +25,6 @@ public class CategoriaResource {
 	@RequestMapping(value="/{id}", method=RequestMethod.GET)
 	public ResponseEntity<?> find(@PathVariable Integer id) {
 		Cliente obj = service.buscar(id);
-		
 		return ResponseEntity.ok().body(obj);
 		
 		
